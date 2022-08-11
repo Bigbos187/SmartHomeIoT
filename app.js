@@ -62,11 +62,7 @@ app.put('/LightOn', (req, res) => {
 });
 app.put('/LightOff', (req, res) => {
     LightRef.update({ Status: "On"});
-});
 
-
-app.delete('/remove', (req, res) => {
-    usersRef.child(req.body.user_id).remove();
 });
 
 // usersRef.on('child_added', snapshot => {
@@ -97,10 +93,10 @@ app.delete('/remove', (req, res) => {
 //     console.log(snapshot.val());
 // });
 
-usersRef.orderByValue().limitToLast(2).on('value', snapshot => {
-    console.log(snapshot.val());
-});
+// usersRef.orderByValue().limitToLast(2).on('value', snapshot => {
+//     console.log(snapshot.val());
+// });
 
-app.listen(port, () => {
-    //console.log(`App is listening to port ${port}`);
-});
+// app.listen(port, () => {
+//     //console.log(`App is listening to port ${port}`);
+// });
