@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase - Database Server Side</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="controll_board">
+        <div class="list_device">
+            <h1 class="Smarthome">Smart home</h1>
+            <div class="device">
+                <div class="name_device"><h3>Door</h3></div>
+                <form id="door" class="status">  
+                        <label class="switch">
+                            <input type="checkbox" class="switch-input">
+                            <span class="slider round " ></span>
+                        </label>
+                </form>
+            </div>
+            <div class="device">
+                <div class="name_device"><h3>Light</h3></div>
+                <form id="light" class="status">
+                    <label class="switch">
+                        <input type="checkbox" class="switch-input" >
+                        <span class="slider round "></span>
+                    </label>
+                </form>
+            </div>
+            <div class="device">
+                <div class="name_device"><h3>Temperture</h3></div>
+                <div class="status"><h3>30℃</h3></div>
+                
+            </div>
+            <div class="member">
+                <h2>Member</h2>
+                <div class="group_avatar">
+                    <div class="avatar">
+                        
+                    </div>
+                    <div class="avatar">
+                    </div>
+                    <div class="avatar">
+                    </div>
+                    <div class="avatar">
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <script src="./functions.js"></script>
+</body>
+</html>

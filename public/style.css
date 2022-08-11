@@ -1,0 +1,133 @@
+* {
+    color: white;
+}
+.list_device{
+    width: 100%;
+    
+}
+
+.controll_board{
+    width: 80%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+.Smarthome{
+    color: black !important;
+    display: flex;
+    justify-content: center;
+}
+.device{
+    display: flex;
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,5,30,1) 25%, rgba(121,9,9,1) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 15px;
+}
+.name_device{
+    margin-left: 30px;
+}
+.status{
+    margin-left: auto;
+    margin-right: 30px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    width: 30px;
+    height: 15px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 0px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .member{
+    width: 100%;
+  }
+  .member h2{
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .group_avatar{
+    display: flex;
+    justify-content: center;
+  }
+  .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,5,30,1) 25%, rgba(121,9,9,1) 100%, rgba(0,212,255,1) 100%);
+    display: inline-flex;
+    margin: 0 5px;
+  }
+html{
+    height: 100%;
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1659853376683-28cd63ad88c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60");
+
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
